@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="h2">
+            <div class="main">
+               <div class="logo">
+                   <img src="logo.png">
+               </div>
+               <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+                </nav>
+                <marquee scrollamount="10">Welcome!! Post your doubts and queries here and get their replies and answers from the experienced people of our community.</marquee>
+            </div>
+            <br>
+            
+            <!-- --------------------------------------------------------------Search Bar------------------------------------------------------------------------- -->
+                   <div>
+                     <h4 style="font-size: 15px;color: #191970">Search Question</h4>
+                    <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="search"  id="question" placeholder="Enter here to search frequently asked questions.." >
+                        <br>
+                        <div id="questionlist"></div>
+                    </div>
+                    </form>
+            </div>
+            
+            <h3 class="page-heading2"><center>Ask Query</center></h3><br>
+   
+<div style="width: 100vw; height: 50vh; background-color: aqua;">
+
+<div class="query" style="width: 50vw;position: absolute; height: 50vh;">
+  <form action="waitreply.html">
+   
+     <label for="categories">Categories:</label>
+                     <select class="form-control selectpicker" name="categories">
+                     <option>Select Category.</option>
+                     <option>Java</option>
+                     <option>Data Base Management System</option>
+                     <option>HTML</option>
+                     <option>CSS</option>
+                     <option>Javascript</option>
+                     </select>
+       
+                      <label for="question">Question:</label> 
+                      <input type="text" name="question" class="form-control">   
+             
+                     <label for="description">Description:<br></label> 
+                     <textarea rows="5" cols="30" class="form-control" name="description"></textarea>
+                     
+                     <label for="file_upload">Upload File:<small>(optional)</small></label> 
+                     <input type="file" name="file_upload" class="form-control"><br>
+                   <center>
+                       <input type="submit" name="submit" value="ASK QUERY" class="form-control btn btn-primary"></center>
+                 
+                     
+  </form>
+</div>
+          <div class="sshow">
+               <img class="mySlides" src="bg.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+               <img class="mySlides" src="3.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+               <img class="mySlides" src="iStock_000017123843Small.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+               <img class="mySlides" src="5.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+               <img class="mySlides" src="forum.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+               <img class="mySlides" src="DiscussionForum.jpg" style="height: 55vh; width: 50vw; margin-left: 50vw;">
+           </div>
+           <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+           
+           
+            </div>
+       
+        </header>
+    </body>
+</html>
